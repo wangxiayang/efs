@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from evernote.api.client import EvernoteClient
 import evernote.edam.type.ttypes as Types
 
@@ -12,14 +14,17 @@ noteStore = client.get_note_store()
 #for n in notebooks:
 #	print n.name
 
-#note = Types.Note()
-#note.title = "Test note"
-#note.content = '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">'
-#note.content += '<en-note>note content</en-note>'
-#note = noteStore.createNote(note)
+note = Types.Note()
+note.title = "NEVER MANUALLY TOUCH THIS!!"
+note.content = '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">'
+note.content += '<en-note><ul>'
+for i in range(0, 5):
+	note.content += '<li>one two</li>'
+note.content += '</ul></en-note>'
+note = noteStore.createNote(note)
 
-noteStore = client.get_note_store()
-notebook = Types.Notebook()
-notebook.name = "My Notebook"
-notebook = noteStore.createNotebook(notebook)
-print notebook.guid
+#noteStore = client.get_note_store()
+#notebook = Types.Notebook()
+#notebook.name = "My Notebook"
+#notebook = noteStore.createNotebook(notebook)
+#print notebook.guid
