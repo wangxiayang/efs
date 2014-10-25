@@ -1,0 +1,22 @@
+<files>
+	<file>
+		<filename>exokernel</filename>
+		<noteguid>0804800</noteguid>
+		<lastupdate>57389752389</lastupdate>
+	</file>
+	<file>
+		<filename>xen</filename>
+		<noteguid>345678</noteguid>
+		<lastupdate>9876543</lastupdate>
+	</file>
+	<file>
+		<filename>xeon phi</filename>
+		<noteguid>57325634512</noteguid>
+		<lastupdate>234567876543</lastupdate>
+	</file>
+	<file>
+		<filename>synthesis</filename>
+		<noteguid>25834953</noteguid>
+		<lastupdate>0987654567</lastupdate>
+	</file>
+</files>
